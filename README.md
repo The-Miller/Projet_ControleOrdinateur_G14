@@ -17,7 +17,7 @@ Ce projet implémente un logiciel client-serveur permettant de contrôler un ord
 - Fichier `server.keystore` pour SSL.
 
 ## Installation
-1. Cloner le dépôt : `git clone https://github.com/The-Miller/Projet_ControleOrdinateur_Gx.git`
+1. Cloner le dépôt : `git clone https://github.com/The-Miller/Projet_ControleOrdinateur.git`
 2. Compiler avec Maven : `mvn clean package`
 3. Lancer le serveur : `java -cp target/classes hadoop.mapreduce.remotecontrolsoftware.server.Server`
 4. Lancer le client : `java -cp target/classes hadoop.mapreduce.remotecontrolsoftware.client.Client`
