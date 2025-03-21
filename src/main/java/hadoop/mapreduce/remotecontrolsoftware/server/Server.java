@@ -52,14 +52,14 @@ public class Server extends Application {
         }
 
         // Crée un label pour le titre de l'interface
-        Label titleLabel = new Label("Serveur de Contrôle à Distance");
+        Label titleLabel = new Label("Serveur de Controle a Distance");
         // Applique un style CSS au titre (taille 20px, couleur bleue)
         titleLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: #4a90e2;");
 
         // Crée le bouton pour démarrer le serveur
-        Button startButton = new Button("Démarrer");
+        Button startButton = new Button("Demarrer");
         // Crée le bouton pour arrêter le serveur, désactivé par défaut
-        Button stopButton = new Button("Arrêter");
+        Button stopButton = new Button("Arreter");
         stopButton.setDisable(true); // Désactive le bouton "Arrêter" au démarrage
 
         // Définit l’action du bouton "Démarrer"
@@ -87,7 +87,7 @@ public class Server extends Application {
         controlBar.setStyle("-fx-background-color: #ffffff; -fx-border-color: #d3d3d3; -fx-border-width: 0 0 1 0;");
 
         // Crée un label pour la liste des clients
-        Label clientsLabel = new Label("Clients Connectés");
+        Label clientsLabel = new Label("Clients Connectes");
         clientListView = new ListView<>(); // Crée la liste graphique des clients
         clientObservableList = FXCollections.observableArrayList(); // Liste observable liée à l’interface
         clientListView.setItems(clientObservableList); // Associe la liste observable à la ListView
@@ -97,7 +97,7 @@ public class Server extends Application {
         clientsPane.setPadding(new Insets(10)); // Ajoute un padding de 10px
 
         // Crée un label pour la zone de logs
-        Label logLabel = new Label("Journal des Événements");
+        Label logLabel = new Label("Journal des Evenements");
         logArea = new TextArea(); // Crée la zone de texte pour les logs
         logArea.setEditable(false); // Rend la zone non éditable
         logArea.setPrefHeight(300); // Définit une hauteur fixe de 300px
@@ -116,7 +116,7 @@ public class Server extends Application {
         Scene scene = new Scene(root, 700, 500);
         // Charge le fichier CSS pour styliser l’interface
         scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-        primaryStage.setTitle("Serveur de Contrôle à Distance"); // Définit le titre de la fenêtre
+        primaryStage.setTitle("Serveur de Controle a Distance"); // Définit le titre de la fenêtre
         primaryStage.setScene(scene); // Associe la scène à la fenêtre
         primaryStage.show(); // Affiche la fenêtre
     }
@@ -136,7 +136,7 @@ public class Server extends Application {
             serverSocket = (SSLServerSocket) factory.createServerSocket(12345);
 
             running = true; // Indique que le serveur est actif
-            log("Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...");
+            log("Serveur SSL démarré sur le port 12345. En attente de connexions securisees...");
 
             while (running) { // Boucle tant que le serveur est actif
                 Socket clientSocket = serverSocket.accept(); // Accepte une connexion client
@@ -159,7 +159,7 @@ public class Server extends Application {
             if (serverSocket != null && !serverSocket.isClosed()) { // Vérifie si le socket existe et est ouvert
                 serverSocket.close(); // Ferme le socket serveur
             }
-            log("Serveur arrêté."); // Log l’arrêt
+            log("Serveur arreté."); // Log l’arrêt
             clearClients(); // Vide la liste des clients
         } catch (IOException e) {
             log("Erreur lors de la fermeture : " + e.getMessage()); // Log une éventuelle erreur
