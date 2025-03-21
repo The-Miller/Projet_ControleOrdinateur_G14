@@ -1,0 +1,76 @@
+[2025-03-21 11:29:15] Serveur démarré sur le port 12345. En attente de connexions...
+[2025-03-21 11:30:04] Échec de l’authentification pour 127.0.0.1
+[2025-03-21 11:30:21] Serveur arrêté.
+[2025-03-21 11:30:23] Serveur démarré sur le port 12345. En attente de connexions...
+[2025-03-21 11:30:49] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 11:31:51] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 11:31:59] Serveur arrêté.
+[2025-03-21 11:32:00] Serveur arrêté.
+[2025-03-21 11:36:55] Serveur démarré sur le port 12345. En attente de connexions...
+[2025-03-21 11:37:01] Client 127.0.0.1 a abandonné l’authentification.
+[2025-03-21 11:37:12] Échec de l’authentification pour 127.0.0.1
+[2025-03-21 11:37:15] Client 127.0.0.1 a abandonné l’authentification.
+[2025-03-21 11:37:27] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 11:37:34] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 11:37:45] Client 127.0.0.1 a abandonné l’authentification.
+[2025-03-21 11:37:51] Serveur arrêté.
+[2025-03-21 11:37:57] Serveur arrêté.
+[2025-03-21 11:48:06] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 11:48:23] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 11:48:37] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 11:49:40] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 11:52:06] Serveur arrêté.
+[2025-03-21 11:52:08] Serveur arrêté.
+[2025-03-21 12:09:15] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:10:07] Échec de l’authentification pour 127.0.0.1
+[2025-03-21 12:10:11] Client 127.0.0.1 a abandonné l’authentification.
+[2025-03-21 12:10:24] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:10:32] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:10:44] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:11:35] Erreur avec le client 127.0.0.1 : Connection reset
+[2025-03-21 12:11:55] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:12:09] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:12:13] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:12:19] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:13:59] Serveur arrêté.
+[2025-03-21 12:20:55] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:21:06] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:21:14] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:24:51] Serveur arrêté.
+[2025-03-21 12:26:06] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:26:16] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:26:26] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:26:34] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:31:48] Serveur arrêté.
+[2025-03-21 12:31:53] Serveur arrêté.
+[2025-03-21 12:34:47] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:35:07] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:35:26] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:38:09] Serveur arrêté.
+[2025-03-21 12:44:58] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:45:08] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:45:12] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:45:27] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:48:01] Serveur arrêté.
+[2025-03-21 12:48:03] Serveur arrêté.
+[2025-03-21 12:52:21] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 12:52:28] Échec de l’authentification pour 127.0.0.1
+[2025-03-21 12:52:36] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 12:52:41] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 12:52:58] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 12:57:26] Serveur arrêté.
+[2025-03-21 13:02:19] Serveur SSL démarré sur le port 12345. En attente de connexions sécurisées...
+[2025-03-21 13:02:29] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 13:02:59] Commande reçue de 127.0.0.1 : ECHO is on
+[2025-03-21 13:03:13] Commande reçue de 127.0.0.1 : time
+[2025-03-21 13:04:20] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 13:04:24] Commande reçue de 127.0.0.1 : dir
+[2025-03-21 13:04:37] Commande reçue de 127.0.0.1 : upload:C:\Users\Boubacar\Desktop\poo.txt
+[2025-03-21 13:05:21] Client authentifié et connecté : 127.0.0.1
+[2025-03-21 13:05:34] Commande reçue de 127.0.0.1 : ECHO boubacar
+[2025-03-21 13:07:29] Commande reçue de 127.0.0.1 : ipconfig
+[2025-03-21 13:07:56] Commande reçue de 127.0.0.1 : tasklist
+[2025-03-21 13:09:08] Commande reçue de 127.0.0.1 : whoami
+[2025-03-21 13:09:30] Commande reçue de 127.0.0.1 : echo %PATH%
+[2025-03-21 13:10:53] Serveur arrêté.
+[2025-03-21 13:10:54] Serveur arrêté.
