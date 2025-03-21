@@ -40,7 +40,7 @@ public class Client extends Application {
     @Override
     public void start(Stage primaryStage) {
         // Crée un label pour le titre de l’interface
-        Label titleLabel = new Label("Client de Contrôle à Distance");
+        Label titleLabel = new Label("Client de Controle a Distance");
         // Applique un style CSS au titre (taille 20px, couleur bleue)
         titleLabel.setStyle("-fx-font-size: 20px; -fx-text-fill: #4a90e2;");
 
@@ -116,7 +116,7 @@ public class Client extends Application {
         Scene scene = new Scene(root, 700, 500);
         // Charge le fichier CSS pour styliser l’interface
         scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-        primaryStage.setTitle("Client de Contrôle à Distance"); // Définit le titre de la fenêtre
+        primaryStage.setTitle("Client de Controle a Distance"); // Définit le titre de la fenêtre
         primaryStage.setScene(scene); // Associe la scène à la fenêtre
         primaryStage.show(); // Affiche la fenêtre
     }
@@ -141,7 +141,7 @@ public class Client extends Application {
             while (!connected) { // Boucle jusqu’à connexion réussie ou abandon
                 String[] credentials = showLoginDialog(); // Affiche la boîte de dialogue d’authentification
                 if (credentials == null || "quit".equalsIgnoreCase(credentials[0])) { // Si annulé ou "quit"
-                    log("Connexion abandonnée."); // Log l’abandon
+                    log("Connexion abandonnee."); // Log l’abandon
                     socket.close(); // Ferme le socket
                     return; // Quitte la méthode
                 }
@@ -155,12 +155,12 @@ public class Client extends Application {
 
                 serverResponse = in.readLine(); // Lit la réponse d’authentification
                 log(serverResponse); // Affiche la réponse
-                if (serverResponse.contains("Authentification réussie")) { // Si authentifié
+                if (serverResponse.contains("Authentification reussie")) { // Si authentifié
                     connected = true; // Marque comme connecté
                     new Thread(this::listenToServer).start(); // Lance un thread pour écouter le serveur
                     break; // Sort de la boucle
                 } else {
-                    log("Voulez-vous réessayer ?"); // Invite à réessayer
+                    log("Voulez-vous reessayer ?"); // Invite à réessayer
                 }
             }
         } catch (IOException e) {
@@ -212,12 +212,12 @@ public class Client extends Application {
             }
             connected = false; // Marque comme déconnecté
             if (uploading) { // Si un upload est en cours
-                log("Déconnexion pendant l’upload. Envoi annulé."); // Log l’interruption
+                log("Deconnexion pendant l’upload. Envoi annule."); // Log l’interruption
             } else {
-                log("Déconnecté du serveur."); // Log la déconnexion normale
+                log("Deconnecte du serveur."); // Log la déconnexion normale
             }
         } catch (IOException e) {
-            log("Erreur lors de la déconnexion : " + e.getMessage()); // Log une erreur
+            log("Erreur lors de la deconnexion : " + e.getMessage()); // Log une erreur
         }
     }
 
@@ -226,7 +226,7 @@ public class Client extends Application {
      */
     private void sendCommand() {
         if (!connected) { // Vérifie si connecté
-            log("Erreur : Vous devez être connecté pour envoyer une commande."); // Log une erreur
+            log("Erreur : Vous devez etre connecte pour envoyer une commande."); // Log une erreur
             return; // Quitte la méthode
         }
         String command = commandField.getText(); // Récupère la commande saisie
@@ -243,17 +243,17 @@ public class Client extends Application {
      */
     private void uploadFile(Stage stage) {
         if (!connected) { // Vérifie si connecté
-            log("Erreur : Vous devez être connecté pour uploader un fichier."); // Log une erreur
+            log("Erreur : Vous devez etre connecte pour uploader un fichier."); // Log une erreur
             return; // Quitte la méthode
         }
         FileChooser fileChooser = new FileChooser(); // Crée un sélecteur de fichier
-        fileChooser.setTitle("Choisir un fichier à envoyer"); // Définit le titre du sélecteur
+        fileChooser.setTitle("Choisir un fichier a envoyer"); // Définit le titre du sélecteur
         File file = fileChooser.showOpenDialog(stage); // Ouvre le sélecteur et récupère le fichier choisi
         if (file != null) { // Si un fichier est sélectionné
             new Thread(() -> { // Lance l’upload dans un thread séparé
                 uploading = true; // Indique qu’un upload est en cours
                 try {
-                    log("Début de l’envoi du fichier : " + file.getName()); // Log le début
+                    log("Debut de l’envoi du fichier : " + file.getName()); // Log le début
                     out.println("upload:" + file.getAbsolutePath()); // Envoie la commande upload avec chemin
 
                     String response = in.readLine(); // Lit la demande de nom de fichier
@@ -285,7 +285,7 @@ public class Client extends Application {
                     if (connected) { // Si erreur et encore connecté
                         log("Erreur lors de l’envoi du fichier : " + e.getMessage()); // Log l’erreur
                     } else {
-                        log("Envoi interrompu par déconnexion."); // Log l’interruption
+                        log("Envoi interrompu par deconnexion."); // Log l’interruption
                     }
                 } finally {
                     uploading = false; // Réinitialise l’indicateur d’upload
@@ -303,7 +303,7 @@ public class Client extends Application {
             while (connected && (response = in.readLine()) != null) { // Tant que connecté et données à lire
                 // Ignore les messages de protocole d’upload
                 if (!"SEND_FILE_NAME".equals(response) && !"SEND_FILE_SIZE".equals(response)) {
-                    log("Réponse du serveur : " + response); // Affiche la réponse
+                    log("Reponse du serveur : " + response); // Affiche la réponse
                 }
             }
         } catch (IOException e) {
