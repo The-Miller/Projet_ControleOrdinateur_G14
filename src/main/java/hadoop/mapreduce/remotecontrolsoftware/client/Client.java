@@ -135,8 +135,8 @@ public class Client extends Application {
             socket = (SSLSocket) factory.createSocket("localhost", 12345);
 
             // Initialise les flux de sortie (texte) et d’entrée (lecture)
-            out = new PrintWriter(socket.getOutputStream(), true);
-            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"), true);
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
 
             while (!connected) { // Boucle jusqu’à connexion réussie ou abandon
                 String[] credentials = showLoginDialog(); // Affiche la boîte de dialogue d’authentification
