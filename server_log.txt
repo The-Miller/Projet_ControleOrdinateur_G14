@@ -74,3 +74,5 @@
 [2025-03-21 13:09:30] Commande reçue de 127.0.0.1 : echo %PATH%
 [2025-03-21 13:10:53] Serveur arrêté.
 [2025-03-21 13:10:54] Serveur arrêté.
+[2025-03-22 10:57:48] Serveur arrÃƒÂªtÃƒÂ©.
+[2025-03-22 11:21:36] Serveur arrÃªtÃ©.

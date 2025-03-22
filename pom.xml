@@ -45,7 +45,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>hadoop.mapreduce.remotecontrolsoftware.client.Client</mainClass>
+                    <mainClass>hadoop.mapreduce.remotecontrolsoftware.server.Server</mainClass>
                 </configuration>
             </plugin>
         </plugins>
