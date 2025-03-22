@@ -46,6 +46,9 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>hadoop.mapreduce.remotecontrolsoftware.server.Server</mainClass>
+                    <options>
+                        <option>-Dfile.encoding=UTF-8</option>
+                    </options>
                 </configuration>
             </plugin>
         </plugins>
