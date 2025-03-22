@@ -32,8 +32,8 @@ public class ClientHandler implements Runnable {
     public void run() {
         try (
             // Initialise les flux de sortie (texte) et d’entrée (lecture) avec fermeture automatique
-            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))
+            PrintWriter out = new PrintWriter(new OutputStreamWriter(clientSocket.getOutputStream(), "UTF-8"), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream(), "UTF-8"))
         ) {
             boolean authenticated = false; // Indicateur d’authentification
             while (!authenticated) { // Boucle jusqu’à authentification réussie ou abandon
