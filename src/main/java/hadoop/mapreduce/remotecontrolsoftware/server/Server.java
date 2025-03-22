@@ -44,8 +44,8 @@ public class Server extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // Initialise le fichier de logs en mode append (ajout à la fin)
-            logFileWriter = new PrintWriter(new FileWriter("server_log.txt", true), true);
+            // Forcer UTF-8 pour le fichier de logs
+            logFileWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream("server_log.txt", true), "UTF-8"), true);
         } catch (IOException e) {
             // Affiche une erreur en console si le fichier ne peut pas être créé
             System.err.println("Erreur lors de l’initialisation du fichier de log : " + e.getMessage());
